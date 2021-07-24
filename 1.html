@@ -1,0 +1,63 @@
+<style>
+  td{
+    text-align: center;
+  }
+</style>
+
+<ol>
+  <li>회귀 모델이란?</li>
+  <li>선형 모델이란?</li>
+</ol>
+<h1>Hello, Machine Learning!</h1>
+<img src="ml.jpg" width=60%>
+<h3>지도학습 - 선형회귀 (Linear Regression)</h3>
+<p style="margin-top: 30px">
+<strong>회귀 모델이란?</strong><br>
+  어떤 자료에 대해서 그 값에 영향을 주는 <u>조건을 고려</u>하여 구한 평균<br>
+(어떤 데이터들이 굉장히 크거나 작을지라도 전체적으로 이 데이터들은 전체 평균으로 회귀하려는 특징이 있다는 통계학 기법)
+</p>
+<p>
+<strong>선형 모델이란?</strong><br>
+- 입력 특성에 대한 선형 함수를 만들어 예측을 수행<br>
+- 다양한 선형 모델이 존재<br>
+- 분류와 회귀에 모두 사용 가능<br>
+</p>
+<p>
+<h4>시험 성적 데이터</h4>
+<table style="width: 25%">
+  <tr>
+    <th>X(학습 시간)</th>
+    <th>Y(시험 점수)</th>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>90</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>20</td>
+  </tr>
+</table>
+</p>
+<code>
+import matplotlib.pyplot as plt<br>
+%matplotlib inline<br><br>
+
+x = [9, 8, 4, 2]<br>
+y = [90, 80, 40, 20]<br><br>
+
+plt.xlim(0, 10)<br>
+plt.ylim(0, 100)<br>
+plt.plot(x, y, 'b-o')<br>
+plt.grid()<br>
+</code>
+<br>
+<img src="linear.png">
